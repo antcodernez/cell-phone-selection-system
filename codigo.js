@@ -1,4 +1,4 @@
-class celphone
+class cellPhone
     {
         constructor(color, peso, resolucionPantalla, camara, ram)
             {
@@ -7,6 +7,7 @@ class celphone
                 this.resolucionPantalla = resolucionPantalla;
                 this.camara = camara;
                 this.ram = ram;
+                this.infoCell = `El telefono es de color ${this.color}, su peso es de ${this.peso}, la resolucón de la pantalla es de ${this.resolucionPantalla}, la camara tiene ${this.camara} pixeles, y posee ${this.ram} de ram`;
             };
             static reiniciar()
                 {
@@ -22,13 +23,13 @@ class celphone
                             alert(`No paso nada, sigue con tu vida :D`);
                         }
                 };
-            takePictures()
+            static takePictures()
                 {
-
+                    alert(`Foto tomada baby :3`);
                 };
-            recordVideo()
+            static recordVideo()
                 {
-
+                    alert("Video tomado nenita Bv");
                 };
             static power()
                 {
@@ -45,7 +46,19 @@ class celphone
                         }
                 }
     };
-function celphonePower()
+function cellPhonePower()
     {
-        celphone.power();
+        cellPhone.power();
+    }
+function reinicioPhone()
+    {
+        cellPhone.reiniciar();
+    }
+function photoTakeIt()
+    {
+        cellPhone.takePictures();
+    }
+function takeVideo()
+    {
+        cellPhone.recordVideo();
     }
