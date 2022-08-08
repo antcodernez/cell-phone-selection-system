@@ -7,7 +7,7 @@ class cellPhone
                 this.resolucionPantalla = resolucionPantalla;
                 this.camara = camara;
                 this.ram = ram;
-                this.infoCell = `El telefono es de color ${this.color}, su peso es de ${this.peso}, la resolucón de la pantalla es de ${this.resolucionPantalla}, la camara tiene ${this.camara} pixeles, y posee ${this.ram} de ram`;
+                this.infoCell = `El telefono es de color ${this.color}, su peso es de ${this.peso} gr, la resolucón de la pantalla es de ${this.resolucionPantalla} px, la camara tiene ${this.camara} pixeles, y posee ${this.ram} gb de ram`;
             };
             static reiniciar()
                 {
@@ -62,3 +62,8 @@ function takeVideo()
     {
         cellPhone.recordVideo();
     }
+    constructor(color, peso, resolucionPantalla, camara, ram)
+const phone1 = new cellPhone ("rojo", 180, "720x1200", 64, 6);
+const phone2 = new cellPhone ("Negro", 178, "189x720", 124, 8);
+const phone3 = new cellPhone ("Azul", 190, "1080x720", 64, 6);
+
